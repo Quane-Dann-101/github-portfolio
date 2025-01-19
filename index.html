@@ -76,13 +76,12 @@
             <p class="hero-text">Transforming ideas into digital reality</p>
             <div class="hero-buttons">
               <a href="#contact" class="custom-btn btn-primary-outline">
-                  <span>Get In Touch</span>
+                <span>Get In Touch</span>
               </a>
               <a href="#projects" class="custom-btn btn-secondary-outline">
-                  <span>View Work</span>
+                <span>View Work</span>
               </a>
-          </div>
-          
+            </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
             <div class="hero-image">
@@ -143,7 +142,10 @@
                   <p>#86 Smith Hill Carenage, Trinidad and Tobago</p>
                 </div>
               </div>
-              <a href="resume/Quane-Jamarie-Dann-Resume.pdf" class="custom-btn btn-download">
+              <a
+                href="resume/Quane-Jamarie-Dann-Resume.pdf"
+                class="custom-btn btn-download"
+              >
                 <span><i class="fas fa-download"></i> Download CV</span>
               </a>
             </div>
@@ -585,16 +587,19 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
-              <form id="contact-form" class="contact-form">
+              <form
+                action="https://formspree.io/f/meooblbv"
+                method="POST"
+              >
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
                       <input
                         type="text"
                         class="form-control custom-input"
+                        name="name"
                         placeholder="Your Name"
                         required
-                        disabled
                       />
                       <span class="focus-border"></span>
                     </div>
@@ -604,9 +609,9 @@
                       <input
                         type="email"
                         class="form-control custom-input"
+                        name="email"
                         placeholder="Your Email"
                         required
-                        disabled
                       />
                       <span class="focus-border"></span>
                     </div>
@@ -616,23 +621,23 @@
                   <input
                     type="text"
                     class="form-control custom-input"
+                    name="subject"
                     placeholder="Subject"
                     required
-                    disabled
                   />
                   <span class="focus-border"></span>
                 </div>
                 <div class="form-group">
                   <textarea
                     class="form-control custom-input"
+                    name="message"
                     rows="5"
                     placeholder="Your Message"
                     required
-                    disabled
                   ></textarea>
                   <span class="focus-border"></span>
                 </div>
-                <button type="submit" class="custom-btn btn-submit" disabled>
+                <button type="submit" class="custom-btn btn-submit">
                   <span>Send Message <i class="fas fa-paper-plane"></i></span>
                 </button>
               </form>
@@ -645,21 +650,21 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-          <div class="row">
-              <div class="col-12 text-center">
-                  <div class="footer-content" data-aos="fade-up" data-aos-delay="100">
-                      <p class="copyright">
-                          &copy; 2025 Quane Dann | Full Stack Developer
-                      </p>
-                      <p class="rights">
-                          All rights reserved. Portfolio designed and developed with <i class="fas fa-heart text-danger"></i>
-                      </p>
-                  </div>
-              </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="footer-content" data-aos="fade-up" data-aos-delay="100">
+              <p class="copyright">
+                &copy; 2025 Quane Dann | Full Stack Developer
+              </p>
+              <p class="rights">
+                All rights reserved. Portfolio designed and developed with
+                <i class="fas fa-heart text-danger"></i>
+              </p>
+            </div>
           </div>
+        </div>
       </div>
-  </footer>
-  
+    </footer>
 
     <!-- Screenshots Modal -->
     <div class="modal fade" id="taxiModal" tabindex="-1" role="dialog">
@@ -1159,6 +1164,8 @@
       });
     </script>
 
+
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1177,6 +1184,5 @@
     <script src="js/main.js"></script>
     <script src="js/penguin-source-code.js"></script>
     <script src="js/billing-source-code.js"></script>
-
   </body>
 </html>
